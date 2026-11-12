@@ -1,0 +1,27 @@
+# Secrets and keys: never commit AWS credentials or key pairs
+.env
+*.pem
+*.key
+credentials
+# IAM access key downloads come as CSV
+*_accessKeys.csv
+*credentials*.csv
+
+# Terraform (if used inside a project)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+
+# Python (Lambda functions)
+__pycache__/
+*.pyc
+.venv/
+# Packaged Lambda artifacts
+*.zip
+
+# Node
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
